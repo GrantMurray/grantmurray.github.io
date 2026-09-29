@@ -1,76 +1,56 @@
-export const profile = {
+export const company = {
   name: "Technical Northwest",
-  role: "website development",
+  tagline: "website development",
   phone: "360-702-9597",
   email: "grant@technicalnw.com",
   github: "https://github.com/GrantMurray",
   about:
-    "Computer science student at Washington State University, with a minor in mathematics.",
+    "Technical Northwest is a freelance web development company in Washington. \
+    We design, build, and update websites for small businesses. \
+    Various front end and backend frameworks are supported.",
 };
 
 export const nav = [
-  { id: "education", label: "education" },
-  { id: "skills", label: "skills" },
-  { id: "experience", label: "experience" },
-  { id: "profiles", label: "profiles" },
+  { id: "services", label: "services" },
+  { id: "process", label: "process" },
+  { id: "about", label: "about" },
   { id: "contact", label: "contact" },
 ];
 
-export const education = [
+export const services = [
   {
-    years: "2021 – 2025",
-    title: "Bachelor of Computer Science",
-    school: "Washington State University",
-    place: "Washington, USA",
+    title: "New websites",
+    text: "A clear site with the pages you need, built in HTML, CSS, and JavaScript and ready to publish.",
   },
   {
-    years: "2021 – 2025",
-    title: "Minor in Mathematics",
-    school: "Washington State University",
-    place: "Washington, USA",
+    title: "Updates",
+    text: "Copy, layout, and feature changes on a site you already have.",
+  },
+  {
+    title: "After launch",
+    text: "Fixes and follow-up work once the site is live.",
   },
 ];
 
-export const skills = [
-  { name: "Adobe Photoshop", level: 84 },
-  { name: "Adobe Illustrator", level: 85 },
-  { name: "Adobe After Effects", level: 83 },
-  { name: "C / C++", level: 95 },
-  { name: "HTML 5", level: 86 },
-  { name: "CSS 3", level: 85 },
-  { name: "JavaScript / Node.js", level: 94 },
-  { name: "UNIX / Linux systems", level: 98 },
-];
-
-export const experience = [
+export const steps = [
   {
-    years: "May 2023 – Present",
-    role: "Head of Security",
-    org: "Lake Merwin Camper's Hideaway",
-    place: "Amboy, WA",
+    number: "01",
+    title: "Tell us what you need",
+    text: "Share the pages, the audience, and what the site should do.",
   },
   {
-    years: "May 2022 – Aug 2022",
-    role: "Electrical Cabinet Engineer",
-    org: "Electro Pac, Inc.",
-    place: "Portland, OR",
+    number: "02",
+    title: "Agree on the work",
+    text: "We settle the scope before building starts.",
   },
   {
-    years: "Mar 2022 – May 2023",
-    role: "Online Order Fulfillment",
-    org: "Walmart Stores, Inc.",
-    place: "Battle Ground, WA",
+    number: "03",
+    title: "Build and review",
+    text: "You see the site as it comes together and request changes.",
   },
   {
-    years: "Jul 2021 – Mar 2022",
-    role: "Stocking and Loading",
-    org: "Walmart Stores, Inc.",
-    place: "Battle Ground, WA",
-  },
-  {
-    years: "Jun 2019 – Sep 2020",
-    role: "Wedding Coordinator Assistant",
-    org: "Heisen House Vineyard",
-    place: "Heisen, WA",
+    number: "04",
+    title: "Launch",
+    text: "The site goes live, and you get what you need to keep it.",
   },
 ];

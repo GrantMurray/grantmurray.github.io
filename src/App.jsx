@@ -1,13 +1,11 @@
 import { useEffect, useState } from "react";
 import About from "./components/About.jsx";
 import Contact from "./components/Contact.jsx";
-import Education from "./components/Education.jsx";
-import Experience from "./components/Experience.jsx";
 import Footer from "./components/Footer.jsx";
 import Header from "./components/Header.jsx";
 import Hero from "./components/Hero.jsx";
-import Profiles from "./components/Profiles.jsx";
-import Skills from "./components/Skills.jsx";
+import Process from "./components/Process.jsx";
+import Services from "./components/Services.jsx";
 import { nav } from "./data.js";
 import "./App.css";
 
@@ -57,11 +55,9 @@ export default function App() {
       />
       <main>
         <Hero />
+        <Services />
+        <Process />
         <About />
-        <Education />
-        <Skills />
-        <Experience />
-        <Profiles />
         <Contact />
       </main>
       <Footer />

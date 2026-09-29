@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { profile } from "../data.js";
+import { company } from "../data.js";
 
 const empty = { name: "", email: "", subject: "", message: "" };
 
@@ -18,7 +18,7 @@ export default function Contact() {
       `${form.message}\n\n— ${form.name}\n${form.email}`,
     );
     const subject = encodeURIComponent(form.subject || "Website message");
-    window.location.href = `mailto:${profile.email}?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:${company.email}?subject=${subject}&body=${body}`;
     setSent(true);
     setForm(empty);
   }
@@ -26,7 +26,7 @@ export default function Contact() {
   return (
     <section id="contact" className="section band">
       <div className="container">
-        <h2 className="section-title">contact me</h2>
+        <h2 className="section-title">start a project</h2>
         <div className="contact-grid">
           <form className="contact-form" onSubmit={submit}>
             <div className="form-row">
@@ -52,13 +52,13 @@ export default function Contact() {
               name="subject"
               value={form.subject}
               onChange={update}
-              placeholder="Subject"
+                placeholder="Project"
             />
             <textarea
               name="message"
               value={form.message}
               onChange={update}
-              placeholder="Message"
+              placeholder="What do you need?"
               rows={8}
               required
             />
@@ -68,25 +68,25 @@ export default function Contact() {
             {sent ? (
               <p className="form-note" role="status">
                 Your mail app should open with this message addressed to{" "}
-                {profile.email}.
+                {company.email}.
               </p>
             ) : null}
           </form>
           <aside className="contact-card">
-            <h3>{profile.name}</h3>
-            <p>{profile.role}</p>
+            <h3>{company.name}</h3>
+            <p>{company.tagline}</p>
             <div>
               <h4>phone</h4>
               <p>
-                <a href={`tel:${profile.phone.replaceAll("-", "")}`}>
-                  {profile.phone}
+                <a href={`tel:${company.phone.replaceAll("-", "")}`}>
+                  {company.phone}
                 </a>
               </p>
             </div>
             <div>
               <h4>email</h4>
               <p>
-                <a href={`mailto:${profile.email}`}>{profile.email}</a>
+                <a href={`mailto:${company.email}`}>{company.email}</a>
               </p>
             </div>
           </aside>

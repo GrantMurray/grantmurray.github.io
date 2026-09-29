@@ -1,11 +1,11 @@
-import { nav } from "../data.js";
+import { company, nav } from "../data.js";
 
 export default function Header({ active, menuOpen, onToggle, onNavigate }) {
   return (
     <header className="site-header">
       <div className="container nav-bar">
         <a className="brand" href="#top" onClick={onNavigate}>
-          home
+          {company.name}
         </a>
         <button
           className="menu-toggle"

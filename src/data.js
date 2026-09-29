@@ -1,5 +1,5 @@
 export const profile = {
-  name: "Grant Murray",
+  name: "Technical Northwest",
   role: "computer science major",
   phone: "360-702-9597",
   email: "grant@technicalnw.com",

@@ -7,4 +7,4 @@ npm install
 npm run dev
 ```
 
-GitHub Pages builds `dist` from `.github/workflows/pages.yml`. The custom domain is `CNAME` (`technicalnw.com`), and Vite copies `public/CNAME` into the published build.
+GitHub Pages serves this repository as static files. `npm run build` compiles the app and writes the JavaScript bundle, stylesheet, and `index.html` that Pages publishes. Commit that output after a build so the live site stays in sync.

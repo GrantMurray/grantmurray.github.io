@@ -1,11 +1,11 @@
 export const company = {
-  name: "Technical Northwest",
+  name: "Technical Northwest LLC",
   tagline: "website development",
   phone: "360-702-9597",
   email: "grant@technicalnw.com",
   github: "https://github.com/GrantMurray",
   about:
-    "Technical Northwest is a freelance web development company in Washington. \
+    "Technical Northwest LLC is a freelance web development company in Washington. \
     We design, build, and update websites for small businesses. \
     Various front end and backend frameworks are supported.",
 };

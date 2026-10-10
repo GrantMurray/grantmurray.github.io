@@ -1,13 +1,13 @@
 export const company = {
   name: "Technical Northwest LLC",
-  tagline: "website development",
+  tagline: "Website Development & Technical Services",
   phone: "360-702-9597",
   email: "grant@technicalnw.com",
   github: "https://github.com/GrantMurray",
   about:
-    "Technical Northwest LLC is a freelance web development company in Washington. \
-    We design, build, and update websites for small businesses. \
-    Various front end and backend frameworks are supported.",
+    "Technical Northwest LLC is a freelance web development company based in Washington. \
+    We design, build, and update websites for small businesses, utilizing a variety of \
+    technologies.",
 };
 
 export const nav = [
@@ -20,23 +20,27 @@ export const nav = [
 export const services = [
   {
     title: "New websites",
-    text: "A clear site with the pages you need, built in HTML, CSS, and JavaScript and ready to publish.",
+    text: "A custom website with various hosting options.",
   },
   {
     title: "Updates",
     text: "Copy, layout, and feature changes on a site you already have.",
   },
   {
-    title: "After launch",
-    text: "Fixes and follow-up work once the site is live.",
+    title: "Maintenence",
+    text: "Fixes and additional upkeep once the site is live.",
   },
+  {
+    title: "Installation",
+    text: "On site computer work and installation of new hardware."
+  }
 ];
 
 export const steps = [
   {
     number: "01",
-    title: "Tell us what you need",
-    text: "Share the pages, the audience, and what the site should do.",
+    title: "Discuss what you need",
+    text: "A one on one meeting to establish the needs and wants of your website.",
   },
   {
     number: "02",

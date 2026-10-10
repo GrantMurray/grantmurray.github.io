@@ -5,6 +5,7 @@ export default function Header({ active, menuOpen, onToggle, onNavigate }) {
     <header className="site-header">
       <div className="container nav-bar">
         <a className="brand" href="#top" onClick={onNavigate}>
+          <img src="/images/tnw-logo.png" alt="" width="200" height="156" />
           {company.name}
         </a>
         <button
